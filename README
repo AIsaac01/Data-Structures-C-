@@ -1,0 +1,37 @@
+Author: Ayham Isaac
+
+Required Tools:
+	gcc - compiler used for this project
+	make - tool for using Makefiles
+
+	run the following (on Ubuntu):
+		> sudo apt-get update
+		> sudo apt install gcc
+		> sudo apt install make
+
+	If you are using another distribution of linux, then the commands might be different,
+	be sure to look up how to install gcc and make from the command line.
+
+Makefile:
+	The purpose of makefiles is to manage the building process for a project.  For really big projects, typing out the compilation commainds can be tedious.  Makefiles make this much easier and more organized, at the cost of learning how makefiles work (which can be annoying).
+
+	to build the project, type out:
+		> make
+
+	this will output the executable 'main', to run it:
+		> ./main
+
+	to clean up all unnecesary files:
+		> make clean
+
+	For more info:
+	https://web.stanford.edu/class/archive/cs/cs107/cs107.1174/guide_make.html
+
+Main.c:
+	all C/C++ programs start execution from some main() function.  That funciton is defined in main.c.
+	Feel free to change it and play around with some of the data structures.
+
+	DO NOT delete any of the #include lines at the top, this will prevent you from using the data structures and associated functions defined in that line.
+
+ALL .h and .c source files:
+	.h files are header files, they declare custom data types and functions.  The function definitions are stated in the corresponding source files.  For example, linkedlist.h is a header file, and linkedlist.c is the source file.  When the compiler looks at main.c, it sees the #include "myfile.h", this points the compiler to that associated *source* file so that it can be compiled.  However, source files are not always needed, and the functions can be defined in the .h file, but this should NOT be done for a good, and complicated, reason.  
