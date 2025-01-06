@@ -49,8 +49,6 @@ void insert_end(LinkedList* list, int val) {
     list->len++;            // increment list length
 }
 
-// removes first node in list and returns its value, returns -1 if list is impty
-// NOTE: returning -1 for empty list is NOT a good way to deal with that issue
 int remove_front(LinkedList* list) {
 
     if (list->len == 0) {
